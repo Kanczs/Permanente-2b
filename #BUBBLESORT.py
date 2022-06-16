@@ -1,7 +1,7 @@
 import random
 import time
 
-def BUBBLESORT(L):
+def Bubblesort(L):
     n = len(L)
     for i in range(0, n): 
         for j in range (n-1, i, -1):
@@ -19,7 +19,7 @@ n = 85000
 lista = list(range(n))
 random.shuffle(lista)
 t1 = time.time()
-l = BUBBLESORT(lista)
+l =  Bubblesort(lista)
 t2 = time.time()
 t_final = t2-t1
 print(f" Bubble Sort  = {n} fue de:",t_final)
